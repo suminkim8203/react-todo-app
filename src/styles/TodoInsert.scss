@@ -1,0 +1,43 @@
+.TodoInsert {
+  display: flex;
+  background: #89946a;
+
+  input {
+    // 기본 스타일 초기화
+    background: none;
+    outline: none;
+    border: none;
+
+    // 내가 하고 싶은 스타일
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: white;
+    flex: 1; // 버튼 자리 빼고 남는 자리 다 니꺼
+
+    &::placeholder {
+      color: #dee2e6;
+    }
+  }
+
+  button {
+    // 기본 스타일 초기화
+    background: none;
+    outline: none;
+    border: none;
+
+    background: #696b63;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; // 세로정렬
+    cursor: pointer;
+    transition: 0.1s background ease-in; // 색변화 천천히
+
+    &:hover {
+      background: #bfe64d;
+    }
+  }
+}
